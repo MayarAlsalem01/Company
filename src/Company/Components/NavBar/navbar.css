@@ -1,0 +1,27 @@
+.navbar span{
+    cursor: pointer;
+}
+.navbar .logo{
+    align-items: center;
+    width: fit-content !important;
+}
+.navbar .logo span{
+    font-size: 18px;
+}
+@media (min-width:991px) {
+    .navbar .logo span{
+        font-size: 36px;
+        
+    }
+   
+}
+
+.navbar-brand{
+    color: #fff !important;
+}
+@media (max-width:767px) {
+    .navbar .logo{
+        width: 100px !important;
+    }
+   
+}

@@ -1,0 +1,32 @@
+.slider_detail-box h1{
+    translate: 250px;
+    animation-name: ltr;
+animation-duration: .5s;
+animation-timing-function: linear;
+animation-delay: .7s;
+animation-fill-mode: forwards;
+}
+@keyframes ltr {
+    0%{
+        translate: 250px;
+    }
+    100%{
+        translate:0
+    }
+}
+.slider_img-box img{
+animation-name: moving;
+animation-duration: 1.5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-direction: alternate;
+animation-delay: 2s;
+}
+@keyframes moving {
+    0%{
+        translate: -25px;
+    }
+    100%{
+        translate: 25px;
+    }
+}

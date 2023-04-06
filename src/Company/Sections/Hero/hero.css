@@ -1,0 +1,8 @@
+.hidden{
+    display: none;
+}
+.hero{
+    translate: 100%;
+    transition: all .3s;
+
+}
