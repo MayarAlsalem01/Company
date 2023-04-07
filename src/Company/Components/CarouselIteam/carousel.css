@@ -37,11 +37,11 @@
 }
 @keyframes moving {
     0%{
-        -webkit-translate: -25px;
-        translate: -25px;
+        -webkit-transform: translate(25px);
+        transform: translate(25px);
     }
     100%{
-        -webkit-translate: 25px;
-        translate: 25px;
+        -webkit-transform: translate(25px);
+        transform: translate(25px);
     }
 }
