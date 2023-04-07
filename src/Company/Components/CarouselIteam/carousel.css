@@ -32,16 +32,18 @@
     animation-timing-function: linear;
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
-    -webkit-animation-delay:2s ;
+    -webkit-animation-delay: 2s;
     animation-delay: 2s;
 }
+
 @keyframes moving {
     0%{
-        -webkit-transform: translate(25px);
-        transform: translate(25px);
+        -webkit-transform: translate(-25px);
+        transform: translate(-25px);
     }
     100%{
         -webkit-transform: translate(25px);
         transform: translate(25px);
     }
 }
+
