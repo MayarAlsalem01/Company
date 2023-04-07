@@ -25,7 +25,7 @@ const Hero = () => {
             <HeroDiv ref={heroRef} className="hero hero_area">
             
                 <header className="header_section">
-                    <div className="container-fluid">
+                    <div className="container-sm">
                         <div className="row">
                             <div className="col-lg-8">
                                 <NavBar />

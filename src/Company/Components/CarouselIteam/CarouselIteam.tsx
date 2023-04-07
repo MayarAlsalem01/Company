@@ -34,7 +34,7 @@ const CarouselIteam = (props: Props) => {
     return (
         <>
             <div className={props.active ? "carousel-item active " : "carousel-item "}>
-                <div className="container">
+                <div className="container-sm">
                     <div className="row">
                         <div className="col-lg-5 col-md-6">
                             <div className="slider_detail-box">

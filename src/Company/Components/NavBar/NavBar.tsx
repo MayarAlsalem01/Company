@@ -18,7 +18,7 @@ const NavBar = () => {
 
         <Box sx={{backgroundColor:'transparent'}}>
             <nav className="navbar navbar-expand-lg ">
-                <div className="container-fluid">
+                <div className="container-fluid m-0 p-0">
                     <div className="logo d-flex  me-1">
                     <a className="navbar-brand mx-1 " href="/" style={{
                         color:DarkTheme.palette.text.primary,
