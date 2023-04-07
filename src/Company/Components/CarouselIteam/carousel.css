@@ -29,9 +29,11 @@ animation-delay: 2s;
 }
 @keyframes moving {
     0%{
+        -webkit-translate: -25px;
         translate: -25px;
     }
     100%{
+        -webkit-translate: 25px;
         translate: 25px;
     }
 }
