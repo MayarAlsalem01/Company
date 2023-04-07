@@ -14,7 +14,7 @@ const Company = () => {
             <I18nextProvider i18n={i18n} >
                 <Hero />
                 <Main />
-                <p>Updating 4</p>
+                <p>Updating 5</p>
             </I18nextProvider>
         </>
     );

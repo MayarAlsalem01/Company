@@ -21,7 +21,7 @@
         translate:0;
     }
 }
-.slider_img-box img{
+/* .slider_img-box img {
     -webkit-animation-name: moving;
     animation-name: moving;
     -webkit-animation-duration: 1.5s;
@@ -36,14 +36,24 @@
     animation-delay: 2s;
 }
 
-@keyframes moving {
-    0%{
+@-webkit-keyframes moving {
+    0% {
         -webkit-transform: translate(-25px);
         transform: translate(-25px);
     }
-    100%{
+    100% {
         -webkit-transform: translate(25px);
         transform: translate(25px);
     }
 }
 
+@keyframes moving {
+    0% {
+        -webkit-transform: translate(-25px);
+        transform: translate(-25px);
+    }
+    100% {
+        -webkit-transform: translate(25px);
+        transform: translate(25px);
+    }
+} */

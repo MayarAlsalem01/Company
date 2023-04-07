@@ -5,19 +5,24 @@ import NavBar from '../../Components/NavBar/NavBar';
 import Slider from '../../Components/Slider/Slider';
 
 import './hero.css'
+import styled from '@emotion/styled';
+const HeroDiv = styled.div`
+    transform: translate(100%);
+    transition: all .3s;
+`
 const heroRef=createRef<HTMLDivElement>()
 const Hero = () => {
     useEffect(()=>{
         setTimeout(() => {
             if(heroRef.current){
 
-                heroRef.current.style.translate='0'
+                heroRef.current.style.transform='translate(0)'
             }
         }, 500);
     },[])
     return (
         <>
-            <div ref={heroRef} className="hero hero_area">
+            <HeroDiv ref={heroRef} className="hero hero_area">
             
                 <header className="header_section">
                     <div className="container-fluid">
@@ -30,7 +35,7 @@ const Hero = () => {
                 </header>
                 <Slider/>
 
-            </div>
+            </HeroDiv>
 
         </>
     );
