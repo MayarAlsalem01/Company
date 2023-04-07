@@ -13,19 +13,27 @@
 }
 @keyframes ltr {
     0%{
+        -webkit-translate:250px;
         translate: 250px;
     }
     100%{
-        translate:0
+        -webkit-translate:0;
+        translate:0;
     }
 }
 .slider_img-box img{
-animation-name: moving;
-animation-duration: 1.5s;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
-animation-direction: alternate;
-animation-delay: 2s;
+    -webkit-animation-name: moving;
+    animation-name: moving;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-delay:2s ;
+    animation-delay: 2s;
 }
 @keyframes moving {
     0%{
