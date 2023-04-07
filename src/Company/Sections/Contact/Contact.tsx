@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import './contact.css'
 const Contact = () => {
     return (
@@ -46,7 +47,7 @@ const Contact = () => {
                 
 
                 <div className="d-flex justify-content-center">
-                    <button type="submit" className="">Send</button>
+                    <Button variant='contained' type="submit" className="" color='primary'>Send</Button>
                 </div>
                     </form>
                 </div>

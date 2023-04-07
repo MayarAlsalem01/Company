@@ -7,3 +7,6 @@
 .contact_section form .form-control{
     border-radius: 30px !important;
 }
+.contact_section form  #inputMessage{
+    border-radius: 20px !important;
+}

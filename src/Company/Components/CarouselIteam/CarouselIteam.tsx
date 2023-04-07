@@ -1,6 +1,6 @@
 
 import styled from '@emotion/styled';
-import SilderImage from '../../images/slider-img.png'
+import SilderImage from '../../../Asset/Coding2.png'
 import CButton from '../ButtonLink/ButtonLink';
 import './carousel.css'
 interface Props {
@@ -22,11 +22,11 @@ const StyledImage=styled.img`
     @keyframes moving {
     0% {
         
-        transform: translate(-25px);
+        transform: translateY(-25px)
     }
     100% {
         
-        transform: translate(25px);
+        transform: translateY(25px);
     }
 }
 `
