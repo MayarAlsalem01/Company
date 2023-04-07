@@ -1,10 +1,15 @@
 .slider_detail-box h1{
     translate: 250px;
     animation-name: ltr;
-animation-duration: .5s;
-animation-timing-function: linear;
-animation-delay: .7s;
-animation-fill-mode: forwards;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: ltr;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-timing-function: linear;
+    animation-delay: .7s;
+    -webkit-animation-fill-mode: forwards;
 }
 @keyframes ltr {
     0%{

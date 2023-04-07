@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import './navbar.css'
-import { Box, Button, IconButton, Link, Typography } from "@mui/material";
+import { Box, IconButton, Typography } from "@mui/material";
 import { DarkTheme } from "../../../Themes/DarkTheme";
 import MenuIcon from '@mui/icons-material/Menu';
 import Logo from '../../../Asset/codelinelogononame.png'
@@ -8,7 +8,7 @@ import Clinks, { Clink } from "../Link/CLink";
 import { createRef } from "react";
 const NavBar = () => {
     const { t, i18n } = useTranslation();
-    const isRtl = i18n.language === 'ar';
+    // const isRtl = i18n.language === 'ar';
     function changeLanguage(lang: string) {
         i18n.changeLanguage(lang);
         ulRef.current?.classList.remove('show');

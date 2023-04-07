@@ -1,6 +1,5 @@
-import { Button } from '@mui/material';
+
 import Welcome from '../../images/welcome.png'
-import { DarkTheme } from '../../../Themes/DarkTheme';
 import CButton from '../../Components/ButtonLink/ButtonLink';
 import Services from '../Services/Servies';
 const Main = () => {

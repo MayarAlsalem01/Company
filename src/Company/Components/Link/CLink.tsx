@@ -8,7 +8,7 @@ interface Props {
   }
   
 const Clinks = ( props:Props )=>{
-    const { t, i18n } = useTranslation();
+    const {  i18n } = useTranslation();
     const isRtl = i18n.language === 'ar';
     return(
         <Link  sx={{
@@ -28,7 +28,7 @@ const Clinks = ( props:Props )=>{
     )
 }
 export const Clink = (props:Props)=>{
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
     const isRtl = i18n.language === 'ar';
     return(
         <Link sx={{
