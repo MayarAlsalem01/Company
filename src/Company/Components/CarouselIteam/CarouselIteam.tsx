@@ -30,6 +30,11 @@ const StyledImage=styled.img`
     }
 }
 `
+const SliderImg = styled.div`
+    @media (max-width:768px) {
+        display: none ;
+    }
+`
 const CarouselIteam = (props: Props) => {
     return (
         <>
@@ -57,12 +62,12 @@ const CarouselIteam = (props: Props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
-                            <div className="slider_img-box">
+                        <div className="col-md-6 ">
+                            <SliderImg className="slider_img-box">
                                 <StyledImage src={SilderImage} alt=""/>
 
                               
-                            </div>
+                            </SliderImg>
                         </div>
                     </div>
                 </div>

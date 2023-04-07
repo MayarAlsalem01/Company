@@ -57,3 +57,6 @@
         transform: translate(25px);
     }
 } */
+.slider_detail-box p{
+    padding-left: 0px;
+}

@@ -12,3 +12,6 @@
     transform: translate(100%);
     transition: all .3s;
 } */
+.hero{
+    height: 100vh;
+}
