@@ -19,7 +19,7 @@ const NavBar = () => {
         <Box sx={{backgroundColor:'transparent'}}>
             <nav className="navbar navbar-expand-lg ">
                 <div className="container-fluid m-0 p-0">
-                    <div className="logo d-flex  me-1">
+                    <div className="logo d-flex  me-5">
                     <a className="navbar-brand mx-1 " href="/" style={{
                         color:DarkTheme.palette.text.primary,
                         
@@ -27,7 +27,7 @@ const NavBar = () => {
                         width:'48px'
                     }}/>
                     </a>
-                    <Typography variant="caption" sx={{color:'#fff'}}>CodeLines</Typography>
+                    <Typography variant="caption" sx={{color:'#fff',fontFamily:'lato,sans-serif',fontWeight:'bold'}}>CODE<span style={{fontFamily:'lato,sans-serif',fontWeight:'300'}}>Lines</span></Typography>
                     </div>
                     <IconButton 
                     className="navbar-toggler" 

@@ -6,6 +6,8 @@ import './css/style.css'
 import './css/responsive.css'
 import Hero from "./Sections/Hero/Hero";
 import Main from "./Sections/Main/Main";
+import Footer from "./Sections/Footer/Footer";
+import Contact from "./Sections/Contact/Contact";
 
 const Company = () => {
 
@@ -14,7 +16,8 @@ const Company = () => {
             <I18nextProvider i18n={i18n} >
                 <Hero />
                 <Main />
-                <p>Updating 5</p>
+                <Contact/>
+                
             </I18nextProvider>
         </>
     );

@@ -3,6 +3,12 @@ body {
   color: #0c0c0c;
   background-color: #ffffff;
 }
+@media (min-width: 1400px)
+{
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1590px;
+}
+}
 
 .layout_padding {
   padding: 75px 0;
@@ -75,7 +81,7 @@ body {
 }
 
 .header_section {
-  padding-top: -10px;
+  padding-top: 0px;
 }
 
 .header_section .container-fluid {

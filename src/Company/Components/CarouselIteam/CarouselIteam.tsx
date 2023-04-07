@@ -54,8 +54,7 @@ const CarouselIteam = (props: Props) => {
 
                                 </h1>
                                 <p>
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum voluptatum veritatis numquam nihil vel vero perspiciatis quo reiciendis tempora, distinctio beatae quia sint asperiores, doloribus nobis inventore eligendi possimus id?
                                 </p>
                                 <div className="btn-box">
                                     <CButton />

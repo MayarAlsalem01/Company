@@ -1,0 +1,9 @@
+@media (min-width:768px) {
+    .form-row{
+        display: flex !important;
+        gap: 5px;
+    }
+}
+.contact_section form .form-control{
+    border-radius: 30px !important;
+}
