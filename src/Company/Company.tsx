@@ -17,7 +17,7 @@ const Company = () => {
                 <Hero />
                 <Main />
                 <Contact/>
-                <p>update 1</p>
+                <p>update 2</p>
             </I18nextProvider>
         </>
     );
