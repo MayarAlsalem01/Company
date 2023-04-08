@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { DarkTheme } from "../../../Themes/DarkTheme";
 const buttonStyles = {
     "&.MuiButton-contained": {
-       background:  `${DarkTheme.palette.primary.main}!important`,
+       background:  `${DarkTheme.palette.primary.dark}!important`,
     },
   };
 const CButton= () =>{

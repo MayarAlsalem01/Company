@@ -1,0 +1,27 @@
+.serv-box::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0%;
+    
+    height: 100%;
+    transition: all .3s;
+    z-index: -1;
+}
+.serv-box:hover::after{
+    width: 100%;
+        
+}
+@media (max-width:767px) {
+    .serv-box{
+        flex-basis: 100% !important ;
+        margin-bottom: 60px;
+    }
+}
+@media (max-width:991px) {
+    .serv-box{
+        flex-basis: 100% !important ;
+        margin-bottom: 60px;
+    }
+}

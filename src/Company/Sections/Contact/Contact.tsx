@@ -3,7 +3,7 @@ import './contact.css'
 const Contact = () => {
     return (
         <>
-            <section className="contact_section layout_padding">
+            <section className="contact_section layout_padding" data-aos="zoom-out-down">
                 <div className="container-sm contact_heading">
                     <h2>
                         Contact Us

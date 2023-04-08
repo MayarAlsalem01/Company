@@ -1,42 +1,48 @@
 import Serv from "../../Components/Serv/Serv"
-import ImageServ from '../../images/s-1.jpg'
-import ImageServ2 from '../../images/s-2.jpg'
-import ImageServ3 from '../../images/s-3.jpg'
+import ImageServ from '../../images/welcome.png'
+import ImageServ2 from '../../../Asset/Coding2.png'
+import ImageServ3 from '../../images/s-2.jpg'
 import './services.css'
+import styled from "@emotion/styled"
+import { Box, Typography } from "@mui/material"
+import { DarkTheme } from "../../../Themes/DarkTheme"
+import 'aos/dist/aos';
+import { useEffect } from "react"
+
 const Services = () => {
+  
     return (
         <>
-            <section className="service_section">
-                <div className="container test">
-                    <div className="custom_heading-container">
-                        <h2>
-                            Our Services
-                        </h2>
-                    </div>
-                    <div className="service_container layout_padding2">
-                        <Serv headert="Business" headerb="Consultant" image={ImageServ}
-                        content=" have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even
-                        slightly believable. If you are"
-                        />
-                         <Serv headert="Marketing" headerb="Analytics" image={ImageServ2}
-                        content="have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even
-                        slightly believable. If you are"
-                        />
-                         <Serv headert="Financial" headerb="Planning" image={ImageServ3}
-                        content="  have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even
-                        slightly believable. If you are"
-                        />
-                        
-                       
-                       
-                    </div>
+            <div className="services" data-aos="zoom-out-down">
+                <div className="container-sm">
                     <div>
-                        <a href="">
-                            Read More
-                        </a>
+                    <Box className="services-heading" sx={{
+                        position:'relative',
+                        margin: '128px auto',
+                        textAlign: 'center',
+                        width:'fit-content',
+                        ":after":{
+                            backgroundColor:DarkTheme.palette.primary.main
+                        }
+                        
+                    }}>
+                        <Typography variant="h2" sx={{
+                            fontWeight:'bold',
+                        }}>
+                            What We Offer
+                        </Typography>
+                        <Typography variant="body1" sx={{color:DarkTheme.palette.text.secondary}}>Your Dreams, Our Solutions</Typography>
+                    </Box>
+                    <div className="services-box">
+                        <Serv header="Web Dev" image={ImageServ} content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magnam exercitationem tenetur ratione consectetur nesciunt porro ad cum soluta. Unde at, laborum sunt veritatis non illum exercitationem iure ipsa tempore!"/>
+                        <Serv header="Web Dev" image={ImageServ2} content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magnam exercitationem tenetur ratione consectetur nesciunt porro ad cum soluta. Unde at, laborum sunt veritatis non illum exercitationem iure ipsa tempore!"/> 
+                        <Serv header="Web Dev" image={ImageServ3} content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magnam exercitationem tenetur ratione consectetur nesciunt porro ad cum soluta. Unde at, laborum sunt veritatis non illum exercitationem iure ipsa tempore!"/>
+                        
                     </div>
+                    </div>
+                    
                 </div>
-            </section>
+            </div>
         </>
     );
 }
