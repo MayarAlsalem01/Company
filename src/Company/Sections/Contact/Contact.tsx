@@ -1,25 +1,20 @@
-import { Box, Button, TextField, TextareaAutosize } from '@mui/material';
+import { Box, Button, TextField, TextareaAutosize, Theme,  } from '@mui/material';
 import './contact.css'
 import Heading from '../../Components/Heading/Heading';
 
 import styled from "@emotion/styled";
 import { DarkTheme } from '../../../Themes/DarkTheme';
-const TextArea = styled.textarea`
-    padding: 10px 20px ;
-    height: 200px;
-    width: 100%;
-    border-color:${DarkTheme.palette.divider};
-    border-radius: 5px;
-    transition: all .5s;
-   
-    :focus{
-        border-color: ${DarkTheme.palette.primary.main};
-        outline: solid 1px ${DarkTheme.palette.primary.main};
-        border-radius: 5px;
+import { makeStyles } from '@mui/styles';
+const useStyles = makeStyles((theme:Theme)=>({
+    textField:{
+        '& .MuiInputBase-root':{
+            borderRadius:'50px',
+        }
     }
-`
+}))
 
 const Contact = () => {
+    const classes = useStyles();
     return (
         <Box sx={{ padding: '60px 0 ' }} className='contact container-sm' >
             <Heading title='Contact us' caption='How can you communicate?' />
@@ -40,13 +35,13 @@ const Contact = () => {
                             gap: '20px',
                             marginBottom: '20px'
                         }}>
-                            <TextField className='input' id="email" label="Email" variant="outlined" sx={{
+                            <TextField className={classes.textField} id="email" label="Email" variant="outlined" sx={{
                                 flex: '1',
                             }} />
-                            <TextField id="Name" label="Name" variant="outlined" sx={{ flex: '1' }} />
+                            <TextField className={classes.textField} id="Name" label="Name" variant="outlined" sx={{ flex: '1' }} />
 
                         </Box>
-                        <TextField
+                        <TextField 
                             placeholder="Message"
                             multiline
                             rows={2}

@@ -60,3 +60,42 @@
 .slider_detail-box p{
     padding-left: 0px;
 }
+@media (max-height:324px) {
+    .slider_detail-box{
+        margin-top: 5px !important;
+        
+    }
+        .carousel-inner{
+        height: 100% !important;
+        
+    }
+    .slider_detail-box h1{
+        margin-bottom: 5px !important;
+        font-size: 1.4rem !important;
+    }
+    .slider_detail-box p{
+        font-size: .8rem !important;
+    }
+    .slider_detail-box a{
+        margin-top: 5px !important;
+    } 
+}
+@media (max-height:522px) {
+    .slider_detail-box{
+        margin-top: 10px;
+    }
+        .carousel-inner{
+        height: 100% !important;
+        
+    }
+    .slider_detail-box h1{
+        margin-bottom: 10px;
+        font-size: 2rem;
+    }
+    .slider_detail-box p{
+        font-size: .9rem;
+    }
+    .slider_detail-box a{
+        margin-top: 10px !important;
+    }
+}
