@@ -1,58 +1,66 @@
-import { Button } from '@mui/material';
+import { Box, Button, TextField, TextareaAutosize } from '@mui/material';
 import './contact.css'
+import Heading from '../../Components/Heading/Heading';
+
+import styled from "@emotion/styled";
+import { DarkTheme } from '../../../Themes/DarkTheme';
+const TextArea = styled.textarea`
+    padding: 10px 20px ;
+    height: 200px;
+    width: 100%;
+    border-color:${DarkTheme.palette.divider};
+    border-radius: 5px;
+    transition: all .5s;
+   
+    :focus{
+        border-color: ${DarkTheme.palette.primary.main};
+        outline: solid 1px ${DarkTheme.palette.primary.main};
+        border-radius: 5px;
+    }
+`
+
 const Contact = () => {
     return (
-        <>
-            <section className="contact_section layout_padding" data-aos="zoom-out-down">
-                <div className="container-sm contact_heading">
-                    <h2>
-                        Contact Us
-                    </h2>
-                    <p>
-                        psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    </p>
-                </div>
-                <div className="container-sm">
-                    <form>
-                    <div className="form-row">
-                            <div className="form-group col-md-6">
-                                <label >Name</label>
-                                <input type="text" className="form-control" id="inputName4" />
-                            </div>
-                            <div className="form-group col-md-6">
-                                <label >Email</label>
-                                <input type="email" className="form-control" id="inputEmail4" />
-                            </div>
+        <Box sx={{ padding: '60px 0 ' }} className='contact container-sm' >
+            <Heading title='Contact us' caption='How can you communicate?' />
+            <Box sx={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+            }}>
 
-                        </div>
-                        <div className="form-row">
-                            <div className="form-group col-md-6">
-                                <label >Phone number</label>
-                                <input type="tel" className="form-control" id="inputNumber4" />
-                            </div>
-                            <div className="form-group col-md-6">
-                                <label >Select Service</label>
-                                <select id="inputState" className="form-control">
-                                    <option ></option>
-                                    <option>...</option>
-                                </select>
-                            </div>
+                {/* contact form */}
+                <Box sx={{
+                    width: '50%',
+                    
+                }} className='container-sm form mayar' >
+                    <form action="" >
+                        <Box className='input-group' sx={{
+                            display: 'flex',
+                            gap: '10px',
+                            marginBottom: '20px'
+                        }}>
+                            <TextField id="email" label="Email" variant="outlined" sx={{
+                                 flex: '1', 
+                                 
+                                 }} />
+                            <TextField id="Name" label="Name" variant="outlined" sx={{ flex: '1' }} />
 
-                        </div>
-
-                        <div className="form-group">
-                            <label >Message</label>
-                            <textarea className="form-control" id="inputMessage" placeholder="" />
-                        </div>
-                
-
-                <div className="d-flex justify-content-center">
-                    <Button variant='contained' type="submit" className="" color='primary'>Send</Button>
-                </div>
+                        </Box>
+                        <TextField
+                            placeholder="Message"
+                            multiline
+                            rows={2}
+                            maxRows={8}
+                            sx={{
+                                width:'100%',
+                               
+                            }}
+                        />
                     </form>
-                </div>
-        </section >
-        </>
+                </Box>
+            </Box>
+        </Box>
     )
 }
 export default Contact;

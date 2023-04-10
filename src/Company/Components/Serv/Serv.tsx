@@ -20,21 +20,16 @@ const Serv = (prop: Props) => {
         <>
 
 
-            <Box className='serv-box' data-aos="fade-up"data-aos-anchor-placement="top-bottom" sx={{
+            <Box className='serv-box' data-aos="fade-up"data-aos-anchor-placement="top-bottom" data-aos-delay="500" sx={{
                 flexBasis: 'calc((100% / 3 ) - 40px )',
                 boxShadow: ' rgba(0, 0, 0, 0.24) 0px 3px 8px',
                 border: `solid 1px ${DarkTheme.palette.divider}`,
                 textAlign: 'center',
                 borderRadius:'10px',
                 position: 'relative',
-                transition:'all .5s',
-                ":after": {
-                   
-                    backgroundColor:DarkTheme.palette.primary.light
-                },
-                ":hover":{
-                    color:"#fff"
-                },
+                backgroundColor:'#fff',
+                
+                
                 // ":hover .services-icons":{
                 //     border: `solid 3px #000`,
                     
@@ -47,6 +42,7 @@ const Serv = (prop: Props) => {
                     backgroundColor: DarkTheme.palette.primary.dark,
                     width: 'fit-content',
                     margin: '0px auto',
+                    zIndex:'2',
                     padding: '45px',
                     borderRadius: '10px',
                     position: 'absolute',
@@ -71,6 +67,17 @@ const Serv = (prop: Props) => {
                 <Box className="serv-detail" sx={{
                     padding: '130px 30px 10px',
                     transform: 'none',
+                    zIndex:'1',
+                    transition:'all .5s',
+                    position:'relative',
+                ":after": {
+                   
+                    backgroundColor:DarkTheme.palette.primary.light,
+                    zIndex:'-1'
+                },
+                ":hover":{
+                    color:"#fff"
+                },
                 }}>
                     <h3>{prop.header}</h3>
                     <p>{prop.content}</p>
