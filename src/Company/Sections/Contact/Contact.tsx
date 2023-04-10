@@ -32,18 +32,17 @@ const Contact = () => {
                 {/* contact form */}
                 <Box sx={{
                     width: '50%',
-                    
+
                 }} className='container-sm form mayar' >
                     <form action="" >
                         <Box className='input-group' sx={{
                             display: 'flex',
-                            gap: '10px',
+                            gap: '20px',
                             marginBottom: '20px'
                         }}>
-                            <TextField id="email" label="Email" variant="outlined" sx={{
-                                 flex: '1', 
-                                 
-                                 }} />
+                            <TextField className='input' id="email" label="Email" variant="outlined" sx={{
+                                flex: '1',
+                            }} />
                             <TextField id="Name" label="Name" variant="outlined" sx={{ flex: '1' }} />
 
                         </Box>
@@ -53,8 +52,8 @@ const Contact = () => {
                             rows={2}
                             maxRows={8}
                             sx={{
-                                width:'100%',
-                               
+                                width: '100%',
+
                             }}
                         />
                     </form>

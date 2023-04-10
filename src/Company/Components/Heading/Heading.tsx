@@ -10,14 +10,14 @@ const Heading = (props: Props) => {
         <>
             <Box className="heading" sx={{
                 position: 'relative',
-                margin: '0px auto 40px auto',
+                margin: '0px auto 60px auto',
                 textAlign: 'center',
                 width: 'fit-content',
                 ":after": {
                     backgroundColor: DarkTheme.palette.primary.main
                 }
 
-            }}  >
+            }}  data-aos="zoom-out-up">
                 <Typography variant="body1" sx={{ color: DarkTheme.palette.text.secondary }}>{props.caption}</Typography>
                 <Typography variant="h2" sx={{
                     fontWeight: 'bold',

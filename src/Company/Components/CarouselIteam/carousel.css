@@ -1,5 +1,5 @@
 .slider_detail-box h1{
-    translate: 250px;
+    transform:translate(250px);
     animation-name: ltr;
     animation-duration: .5s;
     animation-timing-function: linear;
@@ -13,12 +13,12 @@
 }
 @keyframes ltr {
     0%{
-        -webkit-translate:250px;
-        translate: 250px;
+        -webkit-transform:translate(250px);
+        transform: translate(250px);
     }
     100%{
-        -webkit-translate:0;
-        translate:0;
+        -webkit-transform:translate(0);
+        transform:translate(0);
     }
 }
 /* .slider_img-box img {

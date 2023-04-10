@@ -1,9 +1,29 @@
 form textarea{
     height: 200px !important;
+    
 }
 .form{
 }
-@media (max-width:991px) {
+.form .css-saddlb-MuiInputBase-root-MuiOutlinedInput-root{
+    border-radius: 15px !important;
+}
+.form .css-1nf0jff-MuiInputBase-root-MuiOutlinedInput-root{
+    border-radius: 15px;
+}
+@media (max-width:767px) {
+    .form .input-group{
+        flex-wrap: wrap;
+    }
+    .form .input{
+        flex-basis: 100% !important;
+    }
+}
+@media (min-width:1200px) {
+    .form{
+        width:100% !important
+    }
+}
+@media (max-width:1201px) {
     .form{
         width:100% !important
     }
